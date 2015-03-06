@@ -10,19 +10,32 @@ targetFile = gets.chomp
 # read file
 path = Dir.pwd + "/"  +targetFile
 file = open(path,"r")
-contents = file.read
+content = file.read
 
 # Decoding
 puts "Decoding:"
-puts contents
-decoded = Base64.decode64(contents)
-#decoded encoded decoded.to_byte_string
+puts content
+
+#decoded = Base64.decode64(content)
+decoded = content.split(" ")
+decoded = decoded.each do |data|
+
+  puts "--"
+  # convert block of base16 (hex) into binary
+  binaryChunk = data.unpack('b*')
+  # output how long the binary is for each data set
+  puts binaryChunk
+  print "Binary chunk length: "
+  puts binaryChunk.to_s.length
+
+end
+
 
 
 # output
 if decoded.nil?
     puts "Can't decode."
   else
-    puts "Decoded:"
-    puts decoded
+    #puts "Decoded:"
+    #puts decoded
 end
