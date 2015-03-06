@@ -1,6 +1,5 @@
 #!/usr/bin/ruby
 require "Base64"
-require "hex_string"
 
 
 
@@ -68,17 +67,30 @@ decoded = decoded.each do |data|
       #puts encodedData
       # add priority encoded data to new bit pile
       $encodedDataPile ||= ""
-      $encodedDataPile = $encodedDataPile+ encodedData.to_s
+      $encodedDataPile = $encodedDataPile.concat(encodedData.to_s)
     end
   end
 end
 
 
 
+# now convert our new binary back into ascii
+
 # output
 if $encodedDataPile.nil?
+    puts "Can't decode. No encoded data pile found."
+  else
+    puts "Encoded data pile:"
+    puts $encodedDataPile
+
+    output = Base64.encode64($encodedDataPile)
+    #output = $encodedDataPile.unpack('H*')
+end
+
+# output
+if output.nil?
     puts "Can't decode."
   else
-    puts "Decoded and priority encoded binary:"
-    puts $encodedDataPile
+    puts "Decoded and priority encoded binary converted to ascii:"
+    puts output
 end
