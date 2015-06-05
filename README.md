@@ -1,9 +1,9 @@
-### Decrypting the strange subreddit [/r/A858DE45F56D9BC9](http://www.reddit.com/r/A858DE45F56D9BC9).
+### Decrypting the strange subreddit [/r/A858DE45F56D9BC9](https://www.reddit.com/r/A858DE45F56D9BC9).
 
 #### Hints
 
-* [/u/fragglet](http://www.reddit.com/u/fragglet) deployed a scraper and auto-analyzer for postshere: [soulsphere.org](http://a858.soulsphere.org/). It is [on github](https://github.com/fragglet/A858nalyze)
-* the format changed at some point.  [old format](http://www.reddit.com/r/A858DE45F56D9BC9/comments/1p26fo/201310231949/) vs [new format](http://www.reddit.com/r/A858DE45F56D9BC9/comments/1p320v/201310231559/)
+* [/u/fragglet](https://www.reddit.com/u/fragglet) deployed a scraper and auto-analyzer for postshere: [soulsphere.org](https://a858.soulsphere.org/). It is [on github](https://github.com/fragglet/A858nalyze)
+* the format changed at some point.  [old format](https://www.reddit.com/r/A858DE45F56D9BC9/comments/1p26fo/201310231949/) vs [new format](https://www.reddit.com/r/A858DE45F56D9BC9/comments/1p320v/201310231559/)
 * each post is of various length and some may be cut off
 * it appears to be hex encoded data that probably breaks down into binary
 * it does not directly convert from hex to ASCII
@@ -12,7 +12,7 @@
 
 #### Community
 
-* there is [a subreddit devoted to solving this](http://www.reddit.com/r/Solving_A858/).
+* there is [a subreddit devoted to solving this](https://www.reddit.com/r/Solving_A858/).
 * there is [a wiki on it](https://www.reddit.com/r/Solving_A858/wiki/index)
 
 
